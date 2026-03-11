@@ -8,7 +8,7 @@ This skill follows the [Agent Skills](https://agentskills.io/) format.
 
 ### svg-logo-maker
 
-Design and generate production-quality SVG logos in modern minimalist style. Includes a reference library of 20+ SVG logos from leading global brands (Apple, OpenAI, Anthropic, Cursor, Google, Figma, Meta, Midjourney, etc.) that the agent studies before generating.
+Design and generate production-quality SVG logos in modern minimalist style using **svg.js** for programmatic construction and **browser-based visual verification**.
 
 **Use when:**
 - "Make me a logo"
@@ -19,9 +19,12 @@ Design and generate production-quality SVG logos in modern minimalist style. Inc
 
 **Workflow:**
 1. **Requirement Gathering** — Extracts brand name, industry, values, color preferences, and style cues
-2. **Design Plan** — Produces a structured design plan covering concept, form language, typography, color strategy, and technical spec
-3. **SVG Generation** — Generates optimized SVG following strict technical standards (minimal paths, `currentColor` theming, accessibility `<title>`, no raster/JS/animation)
-4. **Output** — Writes a single clean SVG file, ready for use from favicon to billboard
+2. **Design Plan** — Produces a structured design plan covering concept, form language, typography, color strategy, and construction approach
+3. **SVG Construction** — Creates a temporary HTML workspace using svg.js to programmatically draw the logo with high-level shape APIs (`rect()`, `circle()`, `polygon()`, `group()`, `gradient()`, `mask()`, `transform()`)
+4. **Browser Preview & Iteration** — Opens the workspace in a browser, takes screenshots for visual verification, and iterates on the design until it matches the plan
+5. **SVG Export & Cleanup** — Extracts the rendered SVG from the browser, cleans svg.js artifacts, and saves a production-ready `.svg` file
+
+**Why svg.js instead of raw SVG?** AI excels at writing JavaScript function calls but struggles with precise SVG path coordinates. svg.js provides a high-level API that maps naturally to programmatic construction, while the browser rendering enables visual feedback loops — producing dramatically better results.
 
 **Design coverage:**
 - Logomarks (symbol only)
