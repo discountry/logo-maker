@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <title>RitMEX Logo</title>
+  <defs>
+    <clipPath id="stripes">
+      <rect width="800" height="15" x="0" y="120" />
+      <rect width="800" height="15" x="0" y="141" />
+      <rect width="800" height="15" x="0" y="162" />
+      <rect width="800" height="15" x="0" y="183" />
+      <rect width="800" height="15" x="0" y="204" />
+      <rect width="800" height="15" x="0" y="225" />
+      <rect width="800" height="15" x="0" y="246" />
+      <rect width="800" height="15" x="0" y="267" />
+    </clipPath>
+  </defs>
+
+  <g fill="#0F62FE" clip-path="url(#stripes)">
+    <!-- R -->
+    <rect x="117" y="120" width="32" height="162" />
+    <rect x="149" y="120" width="58" height="32" />
+    <rect x="149" y="185" width="58" height="32" />
+    <rect x="175" y="120" width="32" height="97" />
+    <polygon points="149,217 181,217 207,282 175,282" />
+
+    <!-- i -->
+    <rect x="222" y="120" width="32" height="32" />
+    <rect x="222" y="170" width="32" height="112" />
+
+    <!-- t -->
+    <rect x="288" y="120" width="32" height="162" />
+    <rect x="269" y="152" width="70" height="32" />
+
+    <!-- M -->
+    <rect x="354" y="120" width="32" height="162" />
+    <rect x="442" y="120" width="32" height="162" />
+    <polygon points="354,120 399,120 414,210 369,210" />
+    <polygon points="474,120 429,120 414,210 459,210" />
+
+    <!-- E -->
+    <rect x="489" y="120" width="32" height="162" />
+    <rect x="521" y="120" width="48" height="32" />
+    <rect x="521" y="185" width="38" height="32" />
+    <rect x="521" y="250" width="48" height="32" />
+
+    <!-- X -->
+    <polygon points="584,120 621,120 684,282 647,282" />
+    <polygon points="684,120 647,120 584,282 621,282" />
+  </g>
+</svg>

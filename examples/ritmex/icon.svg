@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <title>RitMEX Icon</title>
+  <defs>
+    <clipPath id="stripes">
+      <rect width="400" height="15" x="0" y="120" />
+      <rect width="400" height="15" x="0" y="141" />
+      <rect width="400" height="15" x="0" y="162" />
+      <rect width="400" height="15" x="0" y="183" />
+      <rect width="400" height="15" x="0" y="204" />
+      <rect width="400" height="15" x="0" y="225" />
+      <rect width="400" height="15" x="0" y="246" />
+      <rect width="400" height="15" x="0" y="267" />
+    </clipPath>
+  </defs>
+
+  <g fill="#0F62FE" clip-path="url(#stripes)">
+    <!-- R -->
+    <rect x="155" y="120" width="32" height="162" />
+    <rect x="187" y="120" width="58" height="32" />
+    <rect x="187" y="185" width="58" height="32" />
+    <rect x="213" y="120" width="32" height="97" />
+    <polygon points="187,217 219,217 245,282 213,282" />
+  </g>
+</svg>
